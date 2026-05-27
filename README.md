@@ -1,5 +1,13 @@
 # web-encryptor
-Tool for encoding and decoding messages. I practiced Local Storage by creating users, each with their own history of ciphers created so that they can be decoded later.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/RonnyGST/cpp-fibonacci?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/RonnyGST/cpp-fibonacci?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/RonnyGST/cpp-fibonacci?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/RonnyGST/cpp-fibonacci?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/RonnyGST/cpp-fibonacci?style=for-the-badge)
+
+
+> Tool for encoding and decoding messages. I practiced Local Storage by creating users, each with their own history of ciphers created so that they can be decoded later.
 
 # How it works
 
@@ -23,3 +31,4 @@ String Manipulation <br>
 
 # Demonstration
 
+https://ronnygst.github.io/web-encryptor/
