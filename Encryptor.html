@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/sidebar.css">
+        <link rel="icon" type="image/x-icon" href="./assets/icon.png">
+
+        <title>Encryptor🔐</title>
+    </head>
+
+    <body onload="ChangeDisplayName()">
+        <div id="DisplayUserName"></div>
+        
+        <button class="SidebarOpenButton" id="SidebarOpenButton">☰</button>
+        <div class="Sidebar" id="Sidebar">
+            <div id="SidebarButtons">
+                <button id="CloseSidebarButton">Close</button> <br>
+                <button  onclick="ReturnToLoginWindow()" id="Logout">Logout</button> <br>
+                <button onclick="RemoveUser()" id="DeleteUser">Delete user</button>
+            </div>
+            
+            <br>
+            
+            <div id="History">
+                <!--Foi preciso colocar esta classe para que fosse possível copiar os textos,
+                pois para funcionar precisava que já existisse um elemento com essa classe-->
+                <div id="HistoryContent" class="HistoryContent"></div>
+            </div>
+        </div>
+        
+        <h1 class="SmokeText">Encryptor</h1>
+
+        <div id="CipherField">
+            <select id="SelectCipher" class="Round">
+                <option>Unique Cipher</option>
+                <option>Vigenère Cipher</option>
+            </select>
+            
+            <button id="EncodeButton" class="Round">Encode</button>
+            <button id="DecodeButton" class="Round">Decode</button>
+            <br>
+
+            <input type="text" placeholder="Type the password..." class="Round" id="Password">
+            <br>
+            
+            <textarea id="UserInputField" class="Round" placeholder="Type or paste text to encode..."></textarea>
+            <br>
+            <button onclick="EncryptDecrypt()" id="EncryptDecryptButton" class="Round">🔒Encrypt</button>
+            <br>
+            
+            <textarea readonly id="ResultField" class="Round"></textarea>
+            
+            <div id="NotifyCopy">Copied!</div>
+            
+        </div>
+        
+
+        
+        <script type="text/javascript" src = "src/user.js"></script>
+        <script type="text/javascript" src = "src/saveManager.js"></script>
+        <script type="text/javascript" src = "src/script.js"></script>
+        <script type="text/javascript" src = "src/changeStyle.js"></script>
+        <script type="text/javascript" src = "src/vigenere.js"></script>
+        
+        <script type="text/javascript" src = "src/sideBar.js"></script>
+        
+    </body>
+</html>

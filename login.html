@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/login.css">
+        <link rel="icon" type="image/x-icon" href="./assets/icon.png">
+
+        <title>Encryptor🔐</title>
+    </head>
+
+    <body onload="isLogin = true">
+        
+        <h1 class="SmokeText">Encryptor</h1>
+
+        <input type="text" placeholder="User name (Required)" class="NewUserField" id="UserNameField">
+        <input type="password" placeholder="Password (Optional)" class="NewUserField" id="UserPasswordField">
+        <div id="LoginAlert"></div>
+        <button disabled id="NewUserButton">Login</button>
+        <a href="./index.html">Don't have an account? Create account</a>
+
+        <script type="text/javascript" src = "src/user.js"></script>
+        <script type="text/javascript" src = "src/saveManager.js"></script>
+        <script type="text/javascript" src = "src/login.js"></script>
+        
+    </body>
+</html>

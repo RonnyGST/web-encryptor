@@ -1,0 +1,243 @@
+
+#SidebarButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+#CloseSidebarButton {
+    cursor: pointer;
+    font-size: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Logout {
+    padding: 5%;
+    margin: 0% 10%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#DeleteUser {
+    border-radius: 10px;
+}
+
+#History {
+    max-height: 85%;
+    min-width: 100%;
+    overflow-y: scroll; 
+    direction: rtl; /* scrollbar vai para a esquerda */
+    overflow-wrap: break-word; /*Para quebrar a linha se o conteúdo extrapolar*/
+}
+
+#HistoryContent {
+    direction: ltr; /* conteúdo da scrollbox volta ao normal */
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+
+
+/* Painel lateral */
+.Sidebar {
+    position: fixed;
+    top: 0;
+    left: -300%; /* escondido */
+    width: 70%;
+    height: 100%;
+    background: #222;
+    color: white;
+    padding: 3%;
+    transition: left 0.3s ease;
+}
+
+.SidebarOpenButton {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    cursor: pointer;
+}
+
+/* Classe quando aberto */
+.Sidebar.OpenedSidebar {
+    left: 0;
+    display: flex;
+    align-items: start;
+    
+    /*Para que as tags dentro da sidebar sejam organizadas uma em cima da outra e não do lado*/
+    flex-direction: column;
+}
+
+.HistoryElement {
+    background-color: #696969;
+    padding: 3%;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.HistoryPassword {
+    cursor: pointer;
+    background-color:#FFEB3B;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    color: black;
+}
+
+.HistoryCipher {
+    cursor: pointer;
+    background-color:greenyellow;
+    border-radius: 10px;
+    padding: 2%;
+    color: black;
+}
+
+.DeleteHistory {
+    margin-top: 10%;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*Estilo da barra da scrollbox*/
+#History::-webkit-scrollbar {
+  width: 8px;
+}
+
+#History::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#History::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 999px;
+}
+
+#History::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+
+/*Media query precisa estar debaixo de tudo*/
+
+@media screen and (min-width: 370px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 60%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 50%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 27%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 25%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 20%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 16%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 13%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 1918px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -300%; /* escondido */
+        width: 7%;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 3%;
+        transition: left 0.3s ease;
+    }
+}
+

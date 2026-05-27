@@ -1,0 +1,176 @@
+
+body {
+    /*Essas configurações são necessárias para fazer o gradiente funcionar corretamente*/
+    margin: 0;
+    height: 120vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0f2833 10%, #0f1a2c 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+  animation: showPage 1s ease;
+}
+
+h1 {
+    color: #10b981;
+    font-size: 300%;
+    
+    /*Para fazer contorno no texto:*/
+    -webkit-text-stroke: 1px #002f02;
+}
+
+h3 {
+    /*
+    Isto é necessário pois o HTML não gosta de caracteres de espaço juntos.
+    Então entradas como "a   e       i    o" teria apenas um ou dois espaços na renderização.
+    O HTML não renderiza caracteres muito espaçados, ele transforma todos os espaços extras em um.
+    */
+    white-space: pre;
+
+    color:#d9ff00;
+}
+
+
+#DisplayUserName {
+    color: white;
+    position: fixed;
+    right: 2%;
+    top: 1%;
+}
+
+#CipherField {
+    margin-top: 2%;
+    min-width: 50%;
+}
+
+#SelectCipher{
+    min-width: 60%;
+    background-color: #0f172a;
+    color: white;
+    cursor: pointer;
+}
+
+#EncodeButton {
+    background-color: #10b981;
+    cursor: pointer;
+}
+
+#DecodeButton {
+    background-color: #0f172a;
+    color: #93a2b7;
+    cursor: pointer;
+}
+
+#Password {
+    background-color: #0f172a;
+    margin-top: 2%;
+    display: none;
+    color: white;
+    min-width: 100%;
+}
+
+#UserInputField{
+    min-width: 100%;
+    min-height: 40%;
+    background-color: #0f172a;
+    color: white;
+    margin-top: 2%;
+}
+
+#EncryptDecryptButton{
+    background-color: #10b981;
+    min-width: 105%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+#ResultField {
+    display: none;
+    min-width: 100%;
+    min-height: 40%;
+    background-color: #1a2d3b;
+    color: #10b981;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+#NotifyCopy {
+    position: fixed;
+    left: 49%;
+    bottom: -20%;
+    opacity: 0;
+    
+    color: #ffffff;
+    
+}
+
+
+.Round {
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.SmokeText {
+    color: #10b981;
+    font-size: 300%;
+    animation: smoke 3s infinite alternate;
+}
+
+.ShowNotifyAnim {
+    animation: showNotification 1.0s ease-out forwards;
+}
+
+
+
+
+@keyframes smoke {
+    from {
+        /*Parâmetros do text-shadow em ordem: x y blur cor*/
+        text-shadow:
+        0 0 20px white,
+        0 0 30px #00ff3d,
+        0 0 50px #0c7c00;
+    }
+
+    to {
+        text-shadow:
+        0 0 20px #0c7c00,
+        0 0 40px #00ff3d,
+        0 0 80px white;
+    }
+}
+
+
+
+@keyframes showPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes showNotification {
+    0% {
+      bottom: -20%;
+      opacity: 1;
+    }
+
+    50% {
+      bottom: 10%;
+      opacity: 1;
+    }
+
+    /* espera 0.5s no topo */
+    70% {
+      bottom: 10%;
+      opacity: 1;
+    }
+
+    100% {
+      bottom: 10%;
+      opacity: 0;
+    }
+}
+
+
