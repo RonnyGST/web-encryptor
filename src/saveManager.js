@@ -41,3 +41,10 @@ function RemoveUser()
     localStorage.setItem("UsersList", JSON.stringify(registeredUsers)); // Salvar lista atualizada
     window.location.href = "./login.html";
 }
+
+
+window.onload = function() {
+    // Foi preciso criar uma nova data para pegar o ano atual
+    document.getElementById('Copyright').innerHTML = `© ${new Date().getFullYear()} All Rights Reserved`;
+    
+};

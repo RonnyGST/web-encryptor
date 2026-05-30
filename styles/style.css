@@ -106,6 +106,14 @@ h3 {
     
 }
 
+#Copyright {
+    text-decoration: none;
+    position: fixed;
+    left: 90%;
+    top: 90%;
+    font-size: 85%;
+}
+
 
 .Round {
     border-radius: 10px;
